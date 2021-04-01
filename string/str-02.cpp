@@ -13,6 +13,19 @@ bool isSubSequence(char s1[], char s2[], int x, int y) {
 	return true;
 }
 
+/*Recursive way to implement it
+bool isSubSequence(char s1[], char s2[], int x, int y) {
+	//base condition
+	if(x == 0) { return true; }
+	if(y == 0) { return false; }
+	
+	if (str1[x - 1] == str2[y - 1])
+        	return isSubSequence(str1, str2, x - 1, y - 1);
+	
+	return isSubSequence(str1, str2, x, y - 1);
+}
+*/
+
 int main() {
 	char str1[] = "ranit";
 	char str2[] = "franticbutmindtree";
